@@ -1,0 +1,87 @@
+@import '../../../styles/variable.less';
+
+.uploadImages {
+  .uploadItems {
+    padding: 0.5rem 0.4rem;
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    .uploadItem {
+      width: 25%;
+      height: 2.3rem;
+      float: left;
+      position: relative;
+      border: 1px solid rgb(230, 230, 230);
+      text-align: center;
+      overflow: hidden;
+      font-size: 0;
+      &:before {
+        content: '';
+        width: 0;
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%;
+        max-height: 100%;
+      }
+      .btnAdd {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color: #FFFFFF;
+        background-repeat: no-repeat;
+        background-size: 0.64rem auto;
+        background-position: center center;
+        background-image: url('../../../asset/images/add.png');
+      }
+      .btnDelete {
+        display: block;
+        position: absolute;
+        top: 0.2rem;
+        right: 0.2rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        border-radius: 100%;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../../../asset/images/delete.png');
+      }
+    }
+  }
+  .uploadButton {
+    padding: 0 0.88rem;
+    .btnConfirm {
+      display: block;
+      width: 100%;
+      border: none;
+      height: 1.0667rem;
+      line-height: 1.0667rem;
+      background-color: rgb(231, 39, 52);
+      font-size: 0.48rem;
+      color: #FFFFFF;
+      border-radius: 0.15rem;
+      letter-spacing: 1px;
+    }
+  }
+  &.empty {
+    .uploadItem {
+      float: none;
+      border: none;
+      margin: 1rem auto;
+      .btnAdd {
+        background-repeat: no-repeat !important;
+        background-size: 100% auto;
+        background-position: center center;
+        background-image: url('../../../asset/images/photo.png');
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import './mixin.less';
+
+@main_color_1: #333333; //  主要文字
+@main_color_2: #666666;
+@main_color_3: #999999; //  列表中次级信息
+@main_color_4: #cccccc; //  提示文字
+
+@main_bd_1: #C4C4C4; //  搜索框边框
+@main_bd_2: #F5F5F5;
+@main_bd_3: #E6E6E6; //  列表页草稿边框
+
+@main_bg_1: #F5F5F5;
+@main_bg_2: #FFFFFF;
+
+@main_red: #E72734; //  红色主色
+@main_blue: #419BF9; //  蓝色主色
+
+@mian_color_button: #FFFFFF; //  主要按钮字体色
+
+//  TopTitle
+@ToptTitle_height: .8rem; //  TopTitle顶部高度(1.3866rem/0px)
+@TopTitle_color: #979797; //  TopTitle字体色;按钮上的文字
+@TopTitle_bg: #fcfcfc; //  TopTitle背景色
+
+@TopTitle_color_black: @mian_color_button; //  TopTitle字体色;按钮上的文字-黑色
+@TopTitle_bg_black: #444852; //  TopTitle背景色-黑色
+
+//  普遍padding左右间距
+@main_padding: 0.4rem;
+
+// 顶部导航栏高度
+@navbar_height: 1.1733rem;
+
+@main_boxShawdow: rgba(0, 0, 0, 0.15);
+
+//  PC
+@main_brown: #807575; //pc登录页面棕色字体
+@main_button_bgColor: #D80D19; //  PC主要按钮背景色,主字体颜色
+
+@main_export_buttonBg: #FFA13B; //  导出按钮背景色
+
+@Header_lightColor: #D80C18; //  头部渐变色浅色
+@Header_highColor: #A72126; //  头部渐变色深色
+
+@Navs_bdColor: #FAEEEE; //  导航的边框色
+@Navs_bgColor: rgba(253, 248, 248, 0.8); //  导航的背景色
+
+@searchItem_bgColor: #fafafa; //头部输入和选择框的背景色
+@tablehead_bgColor: #f2f0f0; //列表首行背景色
+@tableeven_bgColor: #fbf8f7; //列表偶数行背景色
+
+@selectBg_top: #fff; //下拉选择框的渐变色-上
+@selectBg_bot: #f0f0f0; //下拉选择框的渐变色-下
+
+@loginbtn_hover: rgba(216, 13, 25, .8);
+@loading_color: #000000;
+
+@blankTip_bg: #FFF0F1;
+
+@border_color: #e5e5e5;
+
+//超出省略-单行
+.ellipsis1{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+//超出省略-多行
+.ellipsis(@line) {
+  display: -webkit-box;
+  -webkit-line-clamp: @line;
+  overflow: hidden;
+  white-space: normal;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}

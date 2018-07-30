@@ -1,0 +1,51 @@
+@import '../../styles/variable.less';
+
+.Custom-Modal {
+  width: 70% !important;
+  min-width: 800px;
+  .ant-modal-content{
+    border-radius: 6px;
+    padding-bottom: 5px;
+  }
+  .ant-modal-header{
+    background-color: @selectBg_bot;
+    padding: 12px 24px;
+    .ant-modal-title{
+      color: @main_button_bgColor;
+    }
+  }
+  .ant-modal-body{
+    padding: 5px 20px 20px;
+    box-sizing: border-box;
+    width: 95%;
+    margin: 20px auto;
+    background-color: @searchItem_bgColor;
+    border-radius: 4px;
+    min-height: 300px;
+  }
+  .ant-modal-footer{
+    text-align: center;
+    padding: 20px 0;
+    .ant-btn{
+      width: 90px;
+      height: 32px;
+      border-radius: 2px;
+      color: @main_color_3;
+      background-color: @searchItem_bgColor;
+      border: 1px solid @main_color_3;
+      &:hover{
+        background-color: #fff;
+        color: @main_color_2;
+      }
+      &.ant-btn-primary{
+        color: #fff;
+        background-color: @main_button_bgColor;
+        margin-right: 20px;
+        border: none;
+        &:hover{
+          background-color: @loginbtn_hover;
+        }
+      }
+    }
+  }
+}

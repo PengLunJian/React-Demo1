@@ -1,0 +1,60 @@
+@import '../../styles/variable.less';
+
+.SearchBox {
+  width: 100%;
+  padding: .2933rem @main_padding 0.2667rem;
+  color: @main_color_4;
+  background: #fff;
+  position: relative;
+
+  .am-search {
+    height: 0.9067rem;
+    background: transparent;
+    border: 1px solid @main_bd_1;
+
+    .am-search-input {
+      input[type="search"] {
+        padding-left: calc(~'15px + 0.38rem');
+      }
+
+      .am-search-synthetic-ph-container {
+        .am-search-synthetic-ph-icon {
+          margin-right: 0.38rem;
+          background-size: 16px auto;
+        }
+        .am-search-synthetic-ph-placeholder {
+          .fs(12);
+        }
+      }
+
+      .am-search-synthetic-ph {
+        padding-left: 0;
+      }
+
+      .am-search-clear {
+        display: none;
+      }
+    }
+
+    .am-search-cancel {
+      .fs(15);
+    }
+  }
+
+  .filter{
+    width: 1.3rem;
+    height: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0.2933rem;
+    z-index: 100;
+    background: url(../../asset/images/filter.png) center center no-repeat;
+    background-size: .5rem .5rem;
+    &.show{
+      z-index: 200;
+    }
+  }
+  &.hasDrawerFilter{
+    padding-right: 1.3rem;
+  }
+}

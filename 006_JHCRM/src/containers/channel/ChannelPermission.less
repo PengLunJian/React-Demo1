@@ -1,0 +1,56 @@
+@import '../../styles/variable.less';
+
+.ChannelPermission {
+  width: 70% !important;
+  min-width: 800px;
+  .ratioWrap{
+    width: 100%;
+    .ratioBox{
+        width: 40%;
+        border: 1px solid @main_bd_3;
+        display: inline-block;
+        color: @main_color_3;
+        padding: 10px;
+        min-height: 300px;
+        vertical-align: top;
+        .ratioTitle{
+            color: @main_color_1;
+            font-size: 16px;
+            border-bottom: 1px solid @main_bd_3;
+            padding: 0 10px 5px;
+        }
+        .ant-col-8{
+            margin-bottom: 10px;
+        }
+    }
+    .midWrap{
+        width: 20%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 100px;
+        background: url(../../asset/images/transfer.png) center center no-repeat;
+        background-size: 31.5px 25.5px;
+        height: 100px;
+        span{
+            width: 50px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            margin: 0 auto;
+            border-radius: 2px;
+        }
+        .sel{
+            display: block;
+            color: @main_blue;
+            border: 1px solid @main_blue;
+        }
+        .unSel{
+            display: block;
+            color: @main_color_3;
+            border: 1px solid @main_color_3;
+            margin-top: 27px;
+        }
+    }
+  }
+}

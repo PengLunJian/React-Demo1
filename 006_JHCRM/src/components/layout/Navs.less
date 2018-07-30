@@ -1,0 +1,177 @@
+@import '../../styles/variable.less';
+
+.iconBg(){
+  background-position: 30px center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.Navs {
+  width: 220px;
+  height: 100%;
+  float: left;
+  padding: 20px;
+  background: @main_bg_2;
+  overflow-y: auto;
+  .ant-menu{
+    border-right: none;
+    .ant-menu-item{
+      margin: 10px 0 0;
+      padding: 0 !important;
+      background-color: transparent;
+      .nav {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 0 0 33px;
+        border: 1px solid @Navs_bdColor;
+        border-radius: 66px;
+        color: @main_color_1;
+        padding-left: 60px;
+        
+        &.active {
+          color: @mian_color_button;
+        }
+
+        &.nav_PontentialCustomer {
+          background: @Navs_bgColor url(../../asset/images/menu_customer.png);
+          .iconBg();
+        }
+        &.active_PontentialCustomer{
+          background: @main_button_bgColor url(../../asset/images/menu_customer_active.png);
+          .iconBg();
+        }
+        &.nav_PontentialChannel{
+          background: @Navs_bgColor url(../../asset/images/menu_channel.png);
+          .iconBg();
+        }
+        &.active_PontentialChannel{
+          background: @main_button_bgColor url(../../asset/images/menu_channel_active.png);
+          .iconBg();
+        }
+        &.nav_VisitRecord{
+          background: @Navs_bgColor url(../../asset/images/menu_visit.png);
+          .iconBg();
+        }
+        &.active_VisitRecord{
+          background: @main_button_bgColor url(../../asset/images/menu_visit_active.png);
+          .iconBg();
+        }
+        &.nav_Contacts{
+          background: @Navs_bgColor url(../../asset/images/menu_contacts.png);
+          .iconBg();
+        }
+        &.active_Contacts{
+          background: @main_button_bgColor url(../../asset/images/menu_contacts_active.png);
+          .iconBg();
+        }
+        &.nav_Card{
+          background: @Navs_bgColor url(../../asset/images/menu_businesscard.png);
+          .iconBg();
+        }
+        &.active_Card{
+          background: @main_button_bgColor url(../../asset/images/menu_businesscard_active.png);
+          .iconBg();
+        }
+        &.nav_Product{
+          background: @Navs_bgColor url(../../asset/images/menu_product.png);
+          .iconBg();
+          background-position: 32px center;
+          background-size: 17px 17px;
+        }
+        &.active_Product{
+          background: @main_button_bgColor url(../../asset/images/menu_product_active.png);
+          .iconBg();
+          background-position: 32px center;
+          background-size: 17px 17px;
+        }
+        &.nav_FactCustomer{
+          background: @Navs_bgColor url(../../asset/images/menu_product.png);
+          .iconBg();
+          background-position: 32px center;
+          background-size: 17px 17px;
+        }
+        &.active_FactCustomer{
+          background: @main_button_bgColor url(../../asset/images/menu_product_active.png);
+          .iconBg();
+          background-position: 32px center;
+          background-size: 17px 17px;
+        }
+        &.nav_FactChannel{
+          background: @Navs_bgColor url(../../asset/images/menu_product.png);
+          .iconBg();
+          background-position: 32px center;
+          background-size: 17px 17px;
+        }
+        &.active_FactChannel{
+          background: @main_button_bgColor url(../../asset/images/menu_product_active.png);
+          .iconBg();
+          background-position: 32px center;
+          background-size: 17px 17px;
+        }
+      }
+      > a:hover, &:hover{
+        color: @main_color_1;
+      }
+      > a.active:hover{
+        color: @mian_color_button;
+      }
+      &:after{
+        border-right: none;
+      }
+    }
+    .ant-menu-submenu {
+      color: @main_color_1;
+      &:nth-child(2){
+        .ant-menu-submenu-title{
+          background: @Navs_bgColor url(../../asset/images/menu_channel.png);
+          .iconBg();
+        }
+        &.ant-menu-submenu-open{
+          .ant-menu-submenu-title{
+            background: @main_button_bgColor url(../../asset/images/menu_channel_active.png);
+            .iconBg();
+          }
+        }
+      }
+      .ant-menu-submenu-title{
+        border-radius: 66px;
+        padding-left: 60px !important;
+        background: @Navs_bgColor url(../../asset/images/menu_customer.png);
+        .iconBg();
+        color: @main_color_1;
+      }
+      &.ant-menu-submenu-active{
+        color: #fff;
+        &:hover{
+          color: #fff;
+        }
+      }
+      &.ant-menu-submenu-open{
+        .ant-menu-submenu-title{
+          background: @main_button_bgColor url(../../asset/images/menu_customer_active.png);
+          .iconBg();
+          color: #fff;
+        }
+      }
+      .ant-menu-item{
+        > a.active:hover{
+          color: @main_red;
+        }
+        margin-top: 0;
+        height: 30px;
+        line-height: 30px;
+        .childNav{
+          text-align: center;
+          color: @main_color_3;
+          font-size: 14px;
+          &.active{
+            color: @main_red;
+          }
+        } 
+      }
+    }
+  }
+}
+

@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+@font-face{
+  font-family: 'pingFangSC-Regular';  
+  src: url('../asset/fonts/PingFang SC Regular.ttf');  
+  font-weight: normal;  
+  font-style: normal; 
+}
+
+.fs(@x) {
+  font-size: @x / 37.5 + 0rem;
+}
+
+.topBorder(@border_color){
+  position: relative;
+  &:before{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: @border_color;
+    transform: scaleY(.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.bottomBorder(@border_color){
+  position: relative;
+  &:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: @border_color;
+    transform: scaleY(.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.leftBorder(@border_color){
+  position: relative;
+  &:before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: @border_color;
+    transform: scaleX(.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.rightBorder(@border_color){
+  position: relative;
+  &:after{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: @border_color;
+    transform: scaleX(.5);
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

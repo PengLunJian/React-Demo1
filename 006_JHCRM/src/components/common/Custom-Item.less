@@ -1,0 +1,95 @@
+@import '../../styles/variable.less';
+
+.Custom-Item {
+  height: 30px;
+  line-height: 30px;
+  display: inline-block;
+  margin: 10px 0;
+  width: 50%;
+
+  .label {
+    color: @main_color_2;
+    display: inline-block;
+    min-width: 115px;
+    text-align: right;
+    float: left;
+    padding-right: 1px;
+  }
+
+  input, .select {
+    width: 300px;
+    height: 30px;
+    color: @main_color_1;
+    border-radius: 2px;
+  }
+
+  .inputShow {
+    width: 300px;
+    height: 30px;
+    border: 1px solid @main_bd_1;
+    display: inline-block;
+    padding: 4px 11px;
+    line-height: 1.5;
+    border-radius: 2px;
+    color: @main_color_1;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 0;
+      height: 100%;
+    }
+  }
+
+  .textareaShow {
+    background: #FFFFFF;
+    color: @main_color_1;
+    cursor: default;
+  }
+
+  &.SearchItem {
+    height: 32px;
+    line-height: 32px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width: 280px;
+    margin-bottom: 20px;
+
+    input{
+      padding: 0 11px;
+      
+    }
+
+    input, .select {
+      width: 160px;
+      height: 32px;
+      line-height: 32px;
+      background-color: @searchItem_bgColor;
+      border-radius: 2px;
+      .ant-select-selection {
+        border-top-width: 1px;
+        background: linear-gradient(to bottom, @selectBg_top, @selectBg_bot);
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .ant-select-selection {
+    border-top-width: 1px;
+    background: linear-gradient(to bottom, @selectBg_top, @selectBg_bot);
+    border-radius: 2px;
+  }
+
+  &.singleItem {
+    display: block;
+    height: auto;
+    margin: 10px 0 20px;
+    width: 100%;
+    textarea {
+      display: inline-block;
+      width: 723px;
+    }
+  }
+}

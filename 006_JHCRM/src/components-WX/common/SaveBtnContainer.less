@@ -1,0 +1,25 @@
+@import '../../styles/variable.less';
+
+.SaveBtnContainer {
+  width: 100%;
+  height: @navbar_height;
+  line-height: @navbar_height;
+  margin-top: .2667rem;
+  background: #fff;
+
+  > div {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+
+    &:nth-child(1) {
+      color: @main_color_1;
+    }
+
+    &:last-child {
+      background: @main_red;
+      color: @mian_color_button;
+    }
+  }
+}

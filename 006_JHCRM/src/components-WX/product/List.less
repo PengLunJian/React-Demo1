@@ -1,0 +1,69 @@
+@import '../../styles/variable.less';
+
+.ProductListItem{
+  background-color: #fff;
+  padding: 18px 12px;
+  border-radius: 3px;
+  .title{
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 15px;
+    padding-left: 2px; 
+    .fundCode{
+      font-size: 13px;
+    }
+  }
+  .numWrap{
+    width: 100%;
+    overflow: hidden;
+    line-height: 1;
+    height: 50px;
+    .left{
+      width: 42%;
+      float: left;
+      position: relative;
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 0;
+        width: 0px;
+        height: 90%;
+        background-color: rgba(0,0,0,.1);
+        opacity: .3;
+      }
+      .total{
+        color: @main_button_bgColor;
+        font-size: 24px;
+        margin-top: 3px;
+        .unit{
+          font-size: 13px;
+        }
+      }
+      .labelName{
+        font-size: 13px;
+        color: rgba(51,51,51,.8);
+        margin-top: 7px;
+      }
+      
+    }
+    .right{
+      width: 53%;
+      height: 100%;
+      float: right;
+      color: rgba(51,51,51,.8);
+      .fs(13);
+      text-align: left;
+      padding: 0 0 0 20px;
+      border-left: 1px solid #e5e5e5;
+      .rightItem{
+        margin-top: 3px;
+        &:last-child{
+          margin-top: 18px;
+        }
+      }
+    }
+
+  }
+}

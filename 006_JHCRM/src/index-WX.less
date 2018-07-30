@@ -1,0 +1,171 @@
+// 重置样式
+@import "./styles/global.less";
+@import "./styles/variable.less";
+
+html, body {
+  width: 100%;
+  height: 100%;
+  min-height: 568px; //  兼容部分安卓机键盘弹出后html高度只有键盘到顶栏的高度
+  margin: 0 auto;                 //  兼容IOS...
+  position: relative;
+  font-family: 'pingFangSC-Regular', 'microsoft YaHei';
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  position: absolute;             //  兼容IOS...
+  background: #ffffff;
+}
+
+.c-fs(@fs) {
+  .fs-@{fs} {
+    font-size: @fs / 37.5 + 0rem;
+  }
+}
+
+// 定义设置字体的className类名供组件使用
+.c-fs(9);
+.c-fs(10);
+.c-fs(11);
+.c-fs(12);
+.c-fs(13);
+.c-fs(14);
+.c-fs(15);
+.c-fs(16);
+.c-fs(18);
+
+
+//  覆盖TouchLoader的样式
+.tloader {
+  .tloader-msg, .tloader-loading, .tloader-btn, .tloader-loading {
+    color: @main_color_4;
+  }
+}
+.g-noMore {
+  color: @main_color_2;
+  text-align: center;
+  height: 2rem;
+  line-height: 2rem;
+}
+.g-error {
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  color: @main_red;
+}
+.g-noData {
+  padding: .5rem 0 0 .5rem;
+}
+
+// 头部时间显示和高级筛选图标的样式
+.filter_report{
+  background-color: #fff;
+  height: 50px;
+  color: @main_color_4;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  .selectedDate{
+    padding-left: .85rem;
+    .fs(12);
+    color: @main_color_2;
+    line-height: 50px;
+    background: url(asset/images/icon_time.png) 0.22rem center no-repeat;
+    background-size: 0.45rem 0.45rem;
+    span{
+      color: @main_color_1;
+    }
+  }
+  .filter{
+    height: 50px;
+    position: absolute;
+    right: .5rem;
+    top: 0;
+    z-index: 100;
+    padding-right: .6rem;
+    background: url(./asset/images/filter.png) center right no-repeat;
+    background-size: .5rem .5rem;
+    font-size: .36rem;
+    line-height: 50px;
+    min-width: 1.5rem;
+    &.show{
+      z-index: 200;
+    }
+  }
+}
+
+// 产品列表样式，通用于产品列表、渠道报表、产品报表和保有量申购赎回列表
+.ListItem_product{
+  background-color: #fff;
+  padding: 12px;
+  border-radius: 3px;
+  margin-top: 10px;
+  &:first-child{
+    margin-top: 0;
+  }
+  .title{
+    .fs(16);
+    line-height: 1.2;
+    padding-bottom: 12px;
+    >span {
+      .fs(12);
+    }
+  }
+  .numWrap{
+    width: 100%;
+    overflow: hidden;
+    line-height: 1.2;
+    > div{
+      width: 50%;
+      height: 100%;
+      display: inline-block;
+      color: rgba(51,51,51,.8);
+      .fs(12);
+      text-align: left;
+      vertical-align: middle;
+    }
+    .left{
+      width: 49%;
+      .rightBorder(@border_color);
+      .smallItem{
+        &:last-child{
+          margin-top: 3px;
+        }
+      }
+    }
+    .right{
+      padding-left: 20px;
+      // .leftBorder(@border_color);
+    }
+    .smallItem{
+      white-space: normal;
+      word-break: break-all;
+      &:last-child{
+        margin-top: 12px;
+      }
+      &.red{
+        color: @main_button_bgColor;
+        .fs(24);
+        .unit{
+          .fs(12);
+          color: @main_button_bgColor;
+        }
+      }
+    }
+    .unit{
+      padding-left: 1px;
+    }
+  }
+}
+
+.am-list-item {
+  .am-list-line {
+    .am-list-content {
+      white-space: normal;
+    }
+  }
+}

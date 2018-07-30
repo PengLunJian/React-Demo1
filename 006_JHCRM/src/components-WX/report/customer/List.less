@@ -1,0 +1,93 @@
+@import '../../../styles/variable.less';
+
+.reportCustomer_ListItem{
+  background-color: #fff;
+  padding: 12px 12px 10px;
+  border-radius: 3px;
+  .title{
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 12px;
+    white-space: normal;
+    .fundCode{
+      font-size: 13px;
+    }
+  }
+  .numWrap{
+    width: 100%;
+    overflow: hidden;
+    line-height: 1;
+    height: 50px;
+    display: none;
+    .left{
+      width: 45%;
+      float: left;
+      position: relative;
+      &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 0;
+        width: 0px;
+        height: 90%;
+        background-color: rgba(0,0,0,.1);
+        opacity: .3;
+      }
+      .total{
+        color: @main_button_bgColor;
+        font-size: 24px;
+        margin-top: 3px;
+        .unit{
+          font-size: 13px;
+        }
+      }
+      .labelName{
+        font-size: 13px;
+        color: rgba(51,51,51,.8);
+        margin-top: 7px;
+        padding-left: 4px;
+      }
+      
+    }
+    .right{
+      width: 50%;
+      height: 100%;
+      float: right;
+      color: rgba(51,51,51,.8);
+      font-size: 13px;
+      text-align: left;
+      padding: 0 10px 0 7%;
+      border-left: 1px solid #e5e5e5;
+      .rightItem{
+        margin-top: 3px;
+        &:last-child{
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+  .channelName{
+    line-height: 1rem;
+    color: @main_color_2;
+    border-top: 1px solid #e5e5e5;
+    font-size: 14px;
+    margin-top: 20px;
+    .label{
+      font-size: 13px;
+    }
+  }
+  .botWrap{
+    color: #999999;
+    white-space: normal;
+    .fund{
+      .date{
+        float: right;
+      }
+    }
+    .org{
+      margin-top: 4px;
+      white-space: normal;
+    }
+  }
+}

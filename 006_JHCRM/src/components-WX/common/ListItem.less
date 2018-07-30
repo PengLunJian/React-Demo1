@@ -1,0 +1,136 @@
+@import '../../styles/variable.less';
+
+.ListItem {
+  height: 2.0533rem;
+  background: #fff;
+
+  > div {
+    height: 100%;
+    border-top: 1px solid @main_bd_2;
+
+    > div {
+      height: 100%;
+
+      .am-list-item {
+        padding-left: 0;
+        height: 100%;
+
+        .am-list-line {
+          padding: 0 @main_padding;
+          .am-list-content {
+            height: 100%;
+            padding: 0;
+            white-space: normal;
+          }
+        }
+      }
+    }
+
+    .am-swipe {
+      height: 100%;
+
+      .am-swipe-content {
+        height: 100%;
+
+        .am-list-item {
+          padding-left: 0;
+          height: 100%;
+
+          .am-list-line {
+            padding: 0 @main_padding;
+          }
+
+          .am-list-content {
+            height: 100%;
+            padding: 0;
+          }
+        }
+      }
+
+      .am-swipe-actions-right {
+        width: 2.3467rem;
+
+        .am-swipe-btn {
+          .fs(14);
+          width: 100%;
+          background: @main_bg_1;
+          color: @main_red;
+          //font-size: 14px;
+        }
+      }
+
+    }
+
+  }
+
+  .info {
+    > div {
+      color: @main_color_3;
+
+      > span {
+        &:first-child{
+          padding-right: 0.5333rem;
+        }
+      }
+
+      &:nth-child(1) {
+        position: relative;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          width: 0;
+          height: 100%;
+        }
+
+        > span {
+          display: inline-block;
+          vertical-align: middle;
+
+          &:nth-child(1) {
+            color: @main_color_1;
+            line-height: 1.23rem;
+            max-width: 100%;
+            .fs(15);
+            .ellipsis1();
+          }
+          &.width_50{
+            max-width: 50%;
+          }
+          &.width_60{
+            max-width: 60%;
+          }
+          &:nth-child(2){
+            .fs(10);
+            padding-right: 0;
+          }
+
+          &.right {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+
+            .tag {
+              background: @main_blue;
+              color: #fff;
+              padding: 0 .08rem;
+              border-radius: 1px;
+            }
+
+            .state {
+              color: @main_red;
+              background: @main_bg_1;
+              border: 1px solid @main_bd_3;
+              border-radius: 0.56rem;
+              padding: 0 0.1333rem;
+              margin-right: 0.3rem;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

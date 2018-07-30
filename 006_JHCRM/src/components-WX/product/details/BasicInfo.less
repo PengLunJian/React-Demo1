@@ -1,0 +1,30 @@
+@import '../../../styles/variable.less';
+
+.BasicInfo {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  //padding-bottom: @navbar_height;
+  &.BasicInfo_product{
+    .EditItem {
+      .item{
+        padding: .3rem 0 .3rem 3.9867rem;
+        .label{
+          width: 4rem;
+        }
+      }
+    }
+  }
+  .am-list {
+    margin-top: .2667rem;
+
+    .am-list-body {
+      padding: 0;
+
+      &::after {
+        display: none !important;
+      }
+    }
+  }
+}

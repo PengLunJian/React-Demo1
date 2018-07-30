@@ -1,0 +1,22 @@
+@import '../../../styles/variable.less';
+
+.UrlList {
+  .HighList{
+    top: .1rem;
+  }
+  .listItem{
+    .bottomBorder(@border_color);
+    // border-bottom: 1px solid @border_color;
+  }
+  .urlListItem{
+    .fileName{
+      .fs(14);
+      line-height: 1.6;
+    }
+    .fileType{
+      color: @main_color_3;
+      .fs(10);
+      margin-top: 3px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../../../styles/variable.less';
+
+.HoldingsListItem{
+  background-color: #fff;
+  padding: 8px 12px;
+  border-radius: 3px;
+  >div{
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    word-wrap: break-word;
+  }
+  .title{
+    .fs(15);
+    line-height: 1.5;
+    padding-left: 2px; 
+    .fundCode{
+      font-size: 13px;
+    }
+  }
+  .total{
+    color: @main_button_bgColor;
+    .fs(20);
+    line-height: 1.5;
+    text-align: right;
+    .unit{
+      font-size: 13px;
+    }
+  }
+}

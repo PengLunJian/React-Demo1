@@ -1,0 +1,44 @@
+@import '../../styles/variable.less';
+
+.Header {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: @Header_highColor;
+  background: linear-gradient(@Header_lightColor, @Header_highColor);
+  color: @mian_color_button;
+
+  > div {
+    max-width: 1920px;
+    min-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    .logo{
+      width: 226px;
+      height: 100%;
+      display: inline-block;
+      background: url(../../asset/images/logo_pc.png) center center no-repeat;
+      background-size: 100% 40px;
+      margin-left: 30px;
+    }
+    .userInfo{
+      float: right;
+      color: #fff;
+      .logout{
+        float: right;
+        width: 60px;
+        height: 100%;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.2);
+        border-right: 1px solid rgba(255,255,255,.2);
+        margin-left: 20px;
+        padding-top: 8px;
+        box-sizing: border-box;
+        background: url(../../asset/images/logout.png) center 10px no-repeat;
+        background-size: 14px 17px;
+        cursor: pointer;
+        color: #E89FA3;
+      }
+    }
+  }
+}

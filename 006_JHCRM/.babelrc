@@ -1,0 +1,42 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "modules": false,
+        // "loose": true,
+        "useBuiltIns": true,
+        // 引入babel-polyfill后能够按需引入对应的polyfill，不会全部打包进项目
+        "targets": {
+          "browsers": [
+            "IE >= 9",
+            "iOS >= 7",
+            "Android >= 4"
+          ]
+        },
+        "debug": false
+      }
+    ],
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-runtime",
+    //  使用antd-mobile需要配置下面这一行按需加载
+    [
+      "import",
+      [
+        {
+          "libraryName": "antd-mobile",
+          "style": true
+        },
+        {
+          "libraryName": "antd",
+          "libraryDirectory": "es",
+          "style": true
+        }
+      ]
+    ]
+  ]
+}

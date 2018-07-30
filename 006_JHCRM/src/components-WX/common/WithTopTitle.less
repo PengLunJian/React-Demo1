@@ -1,0 +1,55 @@
+@import '../../styles/variable.less';
+
+.WithTopTitle {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #FFFFFF;
+  .TopTitle {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    text-align: left;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    .backBtn {
+      width: @ToptTitle_height * .85;
+      height: @ToptTitle_height;
+    }
+  }
+  .MainContainer {
+    padding-top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  &.hasBack{
+    padding-top: @ToptTitle_height;
+    .TopTitle {
+      height: @ToptTitle_height;
+      line-height: @ToptTitle_height;
+      color: @TopTitle_color;
+      background-color: @TopTitle_bg;
+      box-shadow: 0 2px 5px #f0f0f0;  
+      .backBtn {
+        color: @TopTitle_color;
+      }
+    }
+  }
+  &.black{
+    .TopTitle {
+      background-color: @TopTitle_bg_black;
+      .backBtn {
+        color: @TopTitle_color_black;
+      }
+    }
+  }
+}
+

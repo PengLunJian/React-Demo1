@@ -1,0 +1,27 @@
+@import '../../styles/variable.less';
+
+.datePicker{
+  background-color: #fff;
+  padding: 5px 15px;
+  color: @main_color_1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  .fs(14);
+  .dateLabel{
+    padding: 8px 0;
+    color: @main_color_3;
+    .dateVal{
+      .fs(15);
+      color: @main_color_2;
+    }
+    .icon {
+      margin-left: 10px;
+      color: @main_color_4;
+      padding-top: 5px;
+    }
+  }
+}

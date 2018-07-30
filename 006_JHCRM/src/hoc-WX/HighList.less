@@ -1,0 +1,25 @@
+@import '../styles/variable.less';
+
+.HighList{
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 1.4667rem;
+  bottom: 0;
+  width: 100%;
+  background: @main_bg_1;
+
+  &.hasFilter {
+    top: 1.4667rem + @ToptTitle_height;
+  }
+
+  &.hasDrawerFilter {
+    top: 1.4667rem + 0.72rem;
+  }
+
+}
+
+.HighList_noData {
+  line-height: 2rem;
+  text-align: center;
+}

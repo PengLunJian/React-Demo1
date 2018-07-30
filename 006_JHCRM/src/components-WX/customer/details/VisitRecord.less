@@ -1,0 +1,53 @@
+@import '../../../styles/variable.less';
+
+.VisitRecord {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  .HighList {
+    top: 1.4667rem;
+  }
+  .VisitHeader {
+    flex: 0 0 auto;
+  }
+  .VisitBody {
+    flex: 1 0 auto;
+  }
+  .VisitFooter {
+    flex: 0 0 auto;
+  }
+
+  .am-list {
+    margin-top: .2667rem;
+
+    .am-list-body {
+      width: 100%;
+      padding: 0 @main_padding;
+
+      &::after {
+        display: none !important;
+      }
+    }
+  }
+
+  .saveContainer {
+    height: @navbar_height;
+    line-height: @navbar_height;
+    margin-top: .2667rem;
+    background-color: #ffffff;
+    > div {
+      display: inline-block;
+      height: 100%;
+      width: 50%;
+      text-align: center;
+
+      &:last-child {
+        background: @main_red;
+        color: @mian_color_button;
+      }
+    }
+  }
+}

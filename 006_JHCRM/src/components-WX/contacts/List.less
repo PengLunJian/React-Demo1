@@ -1,0 +1,72 @@
+@import '../../styles/variable.less';
+
+.ContactsListItem {
+  > div {
+    color: @main_color_3;
+
+    > span {
+      padding-right: 0.5333rem;
+    }
+
+    &:nth-child(1) {
+      line-height: 1.23rem;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 100%;
+      }
+
+      > span {
+        display: inline-block;
+        vertical-align: middle;
+
+        &:nth-child(1) {
+          width: 0.32rem;
+          height: 0.32rem;
+          padding: 0;
+          margin-right: 0.16rem;
+
+          &.male {
+            background: url(../../asset/images/male.png) center;
+            background-size: 100%;
+          }
+
+          &.female {
+            background: url(../../asset/images/female.png) center;
+            background-size: 100%;
+          }
+        }
+
+        &:nth-child(2) {
+          color: @main_color_1;
+        }
+
+      }
+      .right {
+        position: absolute;
+        right: 0;
+
+        .state {
+          color: @main_red;
+          background: @main_bg_1;
+          border: 1px solid @main_bd_3;
+          border-radius: 0.56rem;
+          padding: 0 0.1333rem;
+          margin-right: 0.4rem;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      > span {
+        &:first-child {
+          padding-right: 1.6533rem;
+        }
+      }
+    }
+
+  }
+}

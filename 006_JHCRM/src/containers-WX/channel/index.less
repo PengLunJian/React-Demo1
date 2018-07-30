@@ -1,0 +1,49 @@
+@import '../../styles/variable.less';
+
+.Channel {
+  width: 100%;
+  height: 100%;
+  .HighList{
+    top: 0;
+  }
+  .filter_report{
+    height: 100%;
+  }
+  .navTab{
+    color: @main_color_2;
+    height: 100%;
+    .Tab{
+      .am-tabs{
+        .am-tabs-tab-bar-wrap{
+          width: 60%;
+          .am-tabs-default-bar{
+            box-shadow: none;
+            .am-tabs-default-bar-tab{
+              box-shadow: none;
+            }
+            .am-tabs-default-bar-tab-active {
+              color: @main_red;
+            }
+
+            .am-tabs-default-bar-underline {
+              border-color: @main_red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.TabContent {
+  width: 100%;
+  position: absolute;
+  top: @ToptTitle_height;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.Channel_potentail, .Channel_fact{
+  height: 100%
+}

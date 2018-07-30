@@ -1,0 +1,15 @@
+@import '../../styles/variable.less';
+
+.TabContent {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: @ToptTitle_height;
+  .am-tabs-pane-wrap{
+    &:nth-child(4), &:nth-child(5){
+      overflow-y: hidden;
+    }
+  }
+}

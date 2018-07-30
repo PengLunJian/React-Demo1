@@ -1,0 +1,53 @@
+@import '../../../styles/variable.less';
+.reportCustomer_OutWrap{
+  position: relative;
+  padding-top: 50px;
+  height: 100%;
+  overflow-y: hidden;
+  &.customerHoldings{
+    .filter_report{
+      .filter{
+        z-index: 9999;
+      }
+    }
+    .filterWrap {
+      position: absolute;
+      .drawerContent .botWrap{
+        bottom: @ToptTitle_height + @navbar_height;
+      }
+    }
+    .confirm-panel{
+      position: fixed;
+      bottom: @ToptTitle_height + @navbar_height;
+      left: 0;
+      width: 100%;
+    }
+  }
+  .reportCustomer_Wrap{
+    height: 100%;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    .ListItem{
+      height: auto;
+    }
+    .reportCustomer_list {
+      padding: 10px 0 0;
+      height: 100%;
+      .am-list-item{
+        background-color: @main_bd_2;
+        padding-left: 0;
+        .am-list-line{
+          padding: 0 12px;
+          &:after{
+            height: 0 !important;
+          }
+          .am-list-content{
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+  
+}
+

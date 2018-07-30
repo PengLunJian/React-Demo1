@@ -1,0 +1,68 @@
+@import '../../../styles/variable.less';
+
+.VisitRecord__Item {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  transition: all 300ms ease;
+  .ItemTop {
+    .am-list-content {
+      padding: 0 !important;
+    }
+    .am-swipe-btn {
+      width: 2.3467rem;
+      padding: 0 0.5rem;
+      letter-spacing: 1px;
+      background-color: rgb(230, 230, 230) !important;
+      color: rgb(231, 39, 52) !important
+    }
+    .ItemTitle {
+      display: inline-block;
+      height: @navbar_height;
+      line-height: @navbar_height;
+      font-size: 0.4rem;
+    }
+    .ItemText {
+      display: block;
+      float: right;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      padding: 0 0.1333rem;
+      margin-top: 0.3866rem;
+      border-radius: 0.4rem;
+      background-color: rgb(230, 230, 230);
+      text-align: center;
+      font-size: 0.24rem;
+      color: rgb(231, 39, 52);
+    }
+  }
+  .ItemBottom {
+    padding: 0 0.4rem;
+    font-size: 0;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      border-top: 1px solid rgb(245, 245, 245);
+    }
+    .ItemLabel {
+      display: inline-block;
+      line-height: @navbar_height;
+      font-size: 0.3466rem;
+    }
+    .ItemName {
+      display: inline-block;
+      line-height: @navbar_height;
+      font-size: 0.3466rem;
+      color: rgb(231, 39, 52);
+    }
+    .ItemTime {
+      float: right;
+      line-height: @navbar_height;
+      font-size: 0.3466rem;
+      color: rgb(153, 153, 153);
+    }
+  }
+  &:first-child {
+    border-top: 1px solid rgb(232, 232, 232);
+  }
+}
